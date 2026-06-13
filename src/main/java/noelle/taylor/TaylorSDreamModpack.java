@@ -2,14 +2,16 @@ package noelle.taylor;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.registry.BuiltinRegistries;
 import noelle.taylor.Item.ModItems;
 import noelle.taylor.block.ModBlocks;
-import noelle.taylor.world.ModOreGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class TaylorSDreamModpack implements ModInitializer {
 	public static final String MOD_ID = "taylors-dream-modpack";
+
+
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -20,7 +22,7 @@ public class TaylorSDreamModpack implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModOreGeneration.generateOres();
+
 
 		LOGGER.info("Hello Fabric world!");
 	}
