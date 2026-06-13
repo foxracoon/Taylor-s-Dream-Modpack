@@ -3,6 +3,7 @@ package noelle.taylor;
 import net.fabricmc.api.ModInitializer;
 
 import noelle.taylor.Item.ModItems;
+import noelle.taylor.block.ModBlocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,6 +18,7 @@ public class TaylorSDreamModpack implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}

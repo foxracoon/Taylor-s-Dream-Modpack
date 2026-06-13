@@ -15,6 +15,10 @@ public class ModItems {
             new Item(new Item.Settings().maxCount(1)));
 
     //nether gold
+    public static Item NETHER_GOLD_NUGGET = registerItem("nether_gold_nugget",
+            new Item(new Item.Settings().maxCount(1)));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TaylorSDreamModpack.MOD_ID, name),item);
@@ -25,6 +29,9 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(JADE_SPEAR_HEAD);
+
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries1 ->
+                    fabricItemGroupEntries.add(NETHER_GOLD_NUGGET));
         });
     }
 }
