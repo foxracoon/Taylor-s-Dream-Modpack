@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "taylors-dream-modpack:block/nether_gold_block"
+  }
+}

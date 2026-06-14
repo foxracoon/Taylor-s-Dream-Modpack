@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "taylors-dream-modpack:nether_gold_ore"
+    "taylors-dream-modpack:nether_gold_ore",
+    "taylors-dream-modpack:nether_gold_block"
+
   ]
 }

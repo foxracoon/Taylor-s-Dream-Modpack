@@ -16,6 +16,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(3.5f)
                     .requiresTool()));
 
+    public static final Block NETHER_GOLD_BLOCK = registerBlock("nether_gold_block",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool()));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -32,6 +36,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(ModBlocks.NETHER_GOLD_ORE);
+
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries ->
+                    entries.add(ModBlocks.NETHER_GOLD_BLOCK));
         });
     }
 }

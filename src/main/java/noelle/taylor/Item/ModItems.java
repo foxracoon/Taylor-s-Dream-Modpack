@@ -16,7 +16,11 @@ public class ModItems {
 
     //nether gold
     public static Item NETHER_GOLD_NUGGET = registerItem("nether_gold_nugget",
-            new Item(new Item.Settings().maxCount(1)));
+            new Item(new Item.Settings().fireproof()));
+
+    //wulfrum
+    public static Item WULFRUM_PLATING = registerItem("wulfrum_plating",
+            new Item(new Item.Settings()));
 
 
 

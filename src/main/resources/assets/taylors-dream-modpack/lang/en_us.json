@@ -3,5 +3,6 @@
   "item.taylors-dream-modpack.nether_gold_nugget": "Nether Gold Nugget",
 
 
-  "block.taylors-dream-modpack.nether_gold_ore": "Nether Gold Ore"
+  "block.taylors-dream-modpack.nether_gold_ore": "Nether Gold Ore",
+  "block.taylors-dream-modpack.nether_gold_block":"Nether Gold Block"
 }
